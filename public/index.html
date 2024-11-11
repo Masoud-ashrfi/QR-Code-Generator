@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="app.css" />
+    <script defer src="app.js"></script>
+  </head>
+  <body class="bg-[#262a2f]">
+    <div
+      class="card absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] w-[400px] bg-white py-[25px] px-[35px] rounded-[10px]"
+    >
+      <p class="font-semibold text-[15px] mb-[8px]">Enter your text or URL</p>
+      <input
+        class="w-full h-[50px] mt-[10px] mb-[20px] bg-white p-[10px] border rounded-md border-[#494eea] outline-none qrText"
+        type="text"
+        placeholder="Text or URL"
+      />
+      <div class="imgBox w-[200px] rounded-[5px] max-h-0 overflow-hidden">
+        <img class="qrImage w-full p-[10px]" src="" />
+      </div>
+      <button
+        class="w-full bg-[#494eea] text-white h-12 rounded-[5px] cursor-pointer font-medium my-5 shadow-normal"
+        onclick="generateQR()"
+      >
+        Generate QR code
+      </button>
+    </div>
+  </body>
+</html>
